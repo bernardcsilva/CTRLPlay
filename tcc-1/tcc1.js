@@ -34,3 +34,45 @@ function Multiplicar() {
         res3.innerHTML = `O valor da Multiplicação é de ${val3} `
     }
 }
+function Divisao() {
+
+    let divi1 = document.getElementById('divi')
+    let divi2 = document.getElementById('divi2')
+    let res4 = document.getElementById('res4')
+
+    if (divi1.value / divi2.value < 0) {
+        window.alert(`Tente um valor positivo`)
+    } else {
+        var val4 = Number(divi1.value) / Number(divi2.value)
+        res4.innerHTML = `O valor da Multiplicação é de ${val4} `
+    }
+}
+function converter () {
+    let temp = document.getElementById('temp')
+    let res5 = document.getElementById('res5')
+    let num = temp.value
+    let val1 = 32
+    let val2 = 5/9
+    if (num >= 0) {
+        let cal = (num - val1) * val2
+        res5.innerHTML = `${cal}° C`
+    } else {
+        let cal = (num - val1) * val2
+        res5.innerHTML = `${cal}° C`
+    }
+}
+function converter2() {
+    let temp2 = document.getElementById('temp2')
+    let res6 = document.getElementById('res6')
+    let num2 = temp2.value
+    let val3 = 9/5
+    let val4 = 32
+    if (num2 >= 0) {
+        let cal2 = (num2 * val3) + val4
+        res6.innerHTML = `${cal2}° Fahreinheit`
+        
+    } else {
+        let cal2 = (num2 * val3) + val4
+        res6.innerHTML = `${cal2}° Fahreinheit`
+    }
+}
